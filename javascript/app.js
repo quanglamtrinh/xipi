@@ -412,8 +412,10 @@ if (slide){
 // CHANGE PRICE AND QUANTITY WHEN CLICK ADD BUTTON //
 function increaseItem(){
     const add = document.getElementsByClassName('cart__plus');
+    console.log(add);
     for (var i = 0; i < add.length; i++){
         var addbutton = add[i];
+        console.log("addbutton:", addbutton)
         addbutton.addEventListener('click', function(e){
             var buttonclicked = e.target;
             var quantity = buttonclicked.parentElement.parentElement;
